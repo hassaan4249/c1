@@ -28,16 +28,30 @@
         .fa-circle {
             border-radius: 50%;
             background-color: transparent;
-            padding: 10px;
-            transition: background-color 0.3s ease;
+            padding: 12px;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+            border: 2px solid #999; /* Add grey border */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black; /* Set icon color */
+            font-size: 20px; /* Adjust icon size */
+            text-decoration: none; /* Remove default text decoration */
         }
 
         .fa-circle:hover {
             background-color: green;
+            border-color: green;
         }
-        
+
         #search-bar{
             margin-right:-5vw ;
+        }
+        @media screen and (max-device-width: 480px) {
+            
+        #search-bar{
+            margin-right:0vw ;
+        }
         }
     </style>
 </head>
@@ -47,27 +61,27 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <div class="d-flex align-items-center">
-                    <ul class="social-media me-auto d-none d-lg-block">
+                    <ul class="social-media me-lg-4 d-none d-lg-block">
                         <!-- Circular icons for desktop -->
-                        <li><a href="#" class="fa-circle"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#" class="fa-circle"><i class="fas fa-envelope"></i></a></li>
                         <li><a href="#" class="fa-circle"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#" class="fa-circle"><i class="fab fa-instagram"></i></a></li>
                         <li><a href="#" class="fa-circle"><i class="fab fa-dribbble"></i></a></li>
                     </ul>
 
                     <!-- Logo -->
-                    <a class="navbar-brand me-auto mx-lg-auto" href="#">
+                    <a class="navbar-brand me-lg-0 ms-lg-4 mx-lg-auto" href="#">
                         <img src="C:\Users\hassa\Documents\websites\client 1\website 1\images\icon-header.png" alt="Logo" class="img-fluid" id="img">
                     </a>
                 </div>
 
                 <!-- Search form -->
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center" id="search-bar">
                     <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse">
                         <form action="#" class="ms-lg-auto">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
