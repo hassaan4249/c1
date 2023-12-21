@@ -43,6 +43,52 @@
             background-color: green;
             border-color: green;
         }
+        
+        @media screen and (min-width:719px) {
+        
+            #social-media-nav
+            {
+                margin-left:-7vw;
+            }    
+            #search-bar
+            {
+                margin-right: -7vw;
+            }
+        }
+        @media screen and (min-width:1000px) {
+        
+        #social-media-nav
+        {
+            margin-left:-3vw;
+        }    
+        #search-bar
+            {
+                margin-right: -3vw;
+            }
+    }
+        @media screen and (min-width:1440px) {
+        
+        #social-media-nav
+        {
+            margin-left:-7vw;
+        }    
+        #search-bar
+            {
+                margin-right: -7vw;
+            }
+    }
+    
+    @media screen and (min-width:1761px) {
+        
+        #social-media-nav
+        {
+            margin-left:-17vw;
+        }    
+        #search-bar
+            {
+                margin-right: -17vw;
+            }
+    }
     </style>
 </head>
 
@@ -51,7 +97,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <div class="d-flex align-items-center">
-                    <ul class="social-media me-auto d-none d-lg-block">
+                    <ul class="social-media me-auto d-none d-lg-block"  id="social-media-nav">
                         <!-- Circular icons for desktop -->
                         <li><a href="#" class="fa-circle"><i class="fas fa-envelope"></i></a></li>
                         <li><a href="#" class="fa-circle"><i class="fab fa-twitter"></i></a></li>
@@ -66,7 +112,7 @@
                 </div>
 
                 <!-- Search form -->
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center" id="search-bar">
                     <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
